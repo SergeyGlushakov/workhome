@@ -1,0 +1,30 @@
+
+.nav__link {
+    display: block;
+    padding-top: 7px;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    padding-left: 0;
+    font-family: "fira_sansregular", Helvetica, sans-serif;
+    color: #414141;
+    text-align: right;
+    border-right: 6px solid transparent;
+
+}
+
+.nav__link:hover {
+    color: #33c1e3;
+}
+.nav__item-active .nav__link {
+    border-color: #33c1e3;
+    color: #33c1e3;
+    font-weight: bold;
+}
+
+.nav__link-icon, .nav__link-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+.nav__link-text {
+    margin-left: 4px;
+}

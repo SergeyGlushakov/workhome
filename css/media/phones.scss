@@ -1,0 +1,48 @@
+/*------------------SECTIONS_PHONES_480PX---------------------*/
+@media screen and (max-width: 480px){
+  .container {
+    width: 95%;
+  }
+  /*миксиним ширину хеадера*/
+  $headerContent: (header__left: 230, header__right: 90);
+  @include grid($headerContent);
+
+  .user__username {
+    max-width: 185px;
+    font-size: 14px;
+    line-height: 21px;
+    margin-left: 19px;
+  }
+
+  .nav__item {
+    margin-right: 11px;
+  }
+  .nav__link-icon {
+    display: none;
+  }
+  .nav__link-text {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .about__pic {
+    width: 140px;
+    height: 140px;
+  }
+  .about__desc {
+    height: auto;
+  }
+  /* Доработать скролл*/
+
+  /*=============CAREER.HTML=================*/
+  .career__title {
+    font-size: 18px;
+  }
+  .career__profession, .career__data {
+    font-size: 16px;
+  }
+  /*=============PORTFOLIO.HTML=================*/
+  .portfolio__list {
+    text-align: center;
+  }
+
+}

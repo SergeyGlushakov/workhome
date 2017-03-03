@@ -1,0 +1,34 @@
+//mixin для расчета ширины контейнеров
+@mixin grid($grid) {
+  $totalWidth: 0;
+  @each $className, $width in $grid {
+    $totalWidth: $totalWidth + $width;
+  }
+  @each $className, $width in $grid {
+    .#{$className} {
+      width: (#{$width / $totalWidth * 100})#{%};
+    }
+  }
+}
+//layout
+@import  "layout/normalize.scss";
+@import  "layout/adjustment.scss";
+@import  "layout/fonts.scss";
+@import "layout/font-awesome.scss";
+@import "layout/animate.scss";
+
+//sections
+@import "sections/header.scss";
+@import "sections/sidebar.scss";
+@import "sections/footer.scss";
+@import "sections/content.scss";
+@import "sections/about.scss";
+@import "sections/career.scss";
+@import "sections/portfolio.scss";
+@import "sections/auth.scss";
+
+//media
+@import "media/desktop";
+@import "media/laptop";
+@import "media/tablets";
+@import "media/phones";

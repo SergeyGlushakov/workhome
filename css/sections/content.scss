@@ -1,0 +1,43 @@
+.sidebar, .page-content {
+    float: left;
+}
+
+.sidebar {
+    width: 220px;
+
+}
+.page-content {
+    margin-left: 20px;
+    width: 700px;
+}
+.content__title {
+    font-family:"fira_sansmedium", Arial, sans-serif;
+    font-size: 35px;
+    font-weight:500;
+    color: #414141;
+    margin-bottom: 15px;
+    line-height: 45px;
+}
+
+.btn {
+    padding: 9px 11px;
+    border: 2px solid #e85f61;
+    border-radius: 30px;
+    font-family: "open_sansbold", "Georgia", serif ;
+    font-size: 14px;
+    font-weight:bold;
+    color: #e85f61;
+    display: inline-block;
+}
+.btn__text {
+    margin-left: 5px;
+}
+.btn__icon, btn__text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn:hover {
+    background-color: #e85f61;
+    color: #ffffff;
+}

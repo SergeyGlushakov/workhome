@@ -1,0 +1,37 @@
+
+/*------------------SECTIONS_LAPTOP_992PX---------------------*/
+@media screen and (max-width: 992px){
+
+  .container {
+    width: 750px;
+  }
+  .sidebar, .page-content {
+    float: none;
+    width:100%;
+    margin: 0;
+  }
+  /*--отступ от блоков с контентом от меню 35px*/
+  .sidebar {
+    margin-bottom: 35px;
+  }
+/*выравниваем высоту итемов по мидлу и выравниваем ссылки слева*/
+  .nav__item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 25px;
+  }
+  .nav__link {
+    text-align: left;
+    border:none; /*убираем синий бордер справа у меню*/
+    padding-right: 0;
+  }
+  /*конец выравнивания ссылок слева*/
+  /*--vars--*/
+  $aboutContent: (about__left: 240, about__right: 440);
+  @include grid($aboutContent);
+
+  .about__pic {
+    width: 165px;
+    height: 165px;
+  }
+}

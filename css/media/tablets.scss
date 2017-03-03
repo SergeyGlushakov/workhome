@@ -1,0 +1,80 @@
+/*------------------SECTIONS_TABLETS_768PX---------------------*/
+@media screen and (max-width: 768px){
+  .container {
+    width:480px;
+  }
+  /*vars_header  миксуем миксином ширину левого блока хедер и правого, переводим пиксели в проценты согласно макету*/
+  $headerContent: (header__left: 354, header__right: 126);
+  @include grid($headerContent);
+
+  .about__left, .about__right {
+    float: none;
+    width: 100%;
+  }
+  .content__title {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .about__btn {
+    text-align: center;
+  }
+  .nav__link-text {
+    margin-left: 5px;
+  }
+  .footer {
+    height: 95px;
+    margin-top: -95px;
+  }
+  .wrapper:after {
+    height: 95px;
+  }
+  .footer__left, .footer__right {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* скрываем текст МОИ КОНТАКТЫ*/
+  .contacts__text {
+    display: none;
+  }
+
+  /* присваиваем иконке трубки видимость*/
+  .contacts__icon {
+    display: inline-block;
+  }
+  /*убираем нижний бордер(делаем прозрачным) у надписи мои контакты*/
+  .contacts__link {
+    border: transparent;
+  }
+/*=============CAREER.HTML=================*/
+  .career__left, .career__right {
+    float: none;
+    width: 100%;
+  }
+  .career__left {
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  .career__pic {
+    display: inline-block;
+  }
+
+  .career__item {
+    display: block;
+    width: 100%;
+    &:after, &:before {
+      display: none;
+    }
+  }
+  .career__year {
+    display: none;
+  }
+  /*=============PORTFOLIO.HTML=================*/
+  .portfolio {
+    &__item {
+      width: calc(100%/2 -20px);
+    }
+  }
+
+}

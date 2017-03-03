@@ -1,0 +1,9 @@
+/*------------------SECTIONS_DESKTOP_1200PX---------------------*/
+@media screen and (max-width: 1200px){
+  .container {
+    width: 940px;
+  }
+  /*--vars--*/
+  $aboutContent: (about__left: 320, about__right: 380);
+  @include grid($aboutContent);
+}

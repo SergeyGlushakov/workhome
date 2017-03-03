@@ -1,0 +1,128 @@
+.career__left  {
+    float: left;
+    width: 220px;
+}
+
+.career__right {
+    float: right;
+    width: 455px;
+}
+.career__pic {
+    overflow: hidden;
+    border-radius: 9px;
+    width: 220px;
+    height: 220px;
+
+
+}
+.career__img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+.career__list {
+text-align: right;
+}
+.career__item {
+    display: inline-block;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+    width: 380px;
+    padding: 20px;
+    margin-bottom: 25px;
+    text-align: left;
+    position: relative;;
+}
+
+/*линия*/
+.career__item:after, .career__item:before {
+
+    content: "";
+    display: block;
+    width:1px;
+    background-color: #dddddd;
+    position: absolute;
+    right:100%;
+    margin-right:20px;
+}
+
+.career__item:before {
+    top: 0;
+    bottom: 50%;
+
+}
+
+.career__item:after {
+    top: 50%;
+    bottom: -25px;
+}
+
+.career__item:first-child:before, .career__item:last-child:after  {
+    display: none;
+}
+
+.career__item:hover {
+    background-color: #33c1e3;
+
+}
+
+.career__item:hover .career__title {
+    color: #fff;
+}
+
+.career__item:hover .career__profession, .career__item:hover .career__data {
+    color: #fff;
+}
+
+.career__item:hover .career__year {
+    font-weight:bold;
+    color: #33c1e3;
+}
+
+.career__item:hover .career__year:after {
+    border-color: #94e0f2;
+}
+.career__title {
+    font-size: 21px;
+    line-height: 26px;
+    color: #5a5a5a;
+    margin-bottom: 10px;
+}
+.career__profession, .career__data {
+    font-size: 18px;
+    font-family: "fira_sanslight", "Helvetica", sans-serif;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 10px;
+    
+}
+.career__data {
+    margin-bottom: 0;
+}
+.career__year {
+    position: absolute;
+    top: 50%;
+    margin-top: -13px;
+    right: 100% ;
+    margin-right: 35px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #727272;
+    z-index: 5;
+
+}
+.career__year:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius:50%;
+    background-color: #33c1e3;
+    position: absolute;
+    right: -25px;
+    top:50%;
+    margin-top:-12px;
+    border: 5px solid #f6f6f6;
+}
+
